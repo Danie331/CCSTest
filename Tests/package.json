@@ -1,0 +1,23 @@
+{
+  "name": "jsunittestingdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "karma": "karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "4.4.1",
+    "karma-jasmine": "2.0.1",
+    "karma-phantomjs-launcher": "1.0.4",
+    "karma-html-detailed-reporter": "2.1.0",
+    "karma-mocha-reporter": "2.2.5",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-coverage": "2.0.1",
+    "phantomjs-prebuilt": "2.1.16",
+    "jasmine": "3.5.0",
+    "jasmine-core": "3.5.0"
+  }
+}
