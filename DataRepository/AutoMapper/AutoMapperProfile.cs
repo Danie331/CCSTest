@@ -11,9 +11,9 @@ namespace DataRepository.AutoMapper
             CreateMap<Data.Person, Domain.Person>();
 
             CreateMap<Domain.Employee, Data.Employee>().ForPath(s => s.Person.BirthDate, g => g.MapFrom(f => f.Person.BirthDate))
-                                                      .ForPath(s => s.Person.FirstName, g => g.MapFrom(f => f.Person.FirstName))
-                                                      .ForPath(s => s.Person.LastName, g => g.MapFrom(f => f.Person.LastName))
-                                                      .ReverseMap();
+                                                       .ForPath(s => s.Person.FirstName, g => g.MapFrom(f => f.Person.FirstName))
+                                                       .ForPath(s => s.Person.LastName, g => g.MapFrom(f => f.Person.LastName))
+                                                       .ReverseMap();
         }
     }
 }

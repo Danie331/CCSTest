@@ -26,14 +26,14 @@ namespace InternalServices.Core
             return await _employeeRepository.GetEmployeeAsync(id);
         }
 
-        public async Task<Employee> GetEmployeeAsync(int employeeId)
+        public Task<Employee> GetEmployeeAsync(int employeeId)
         {
-            return await _employeeRepository.GetEmployeeAsync(employeeId);
+            return _employeeRepository.GetEmployeeAsync(employeeId);
         }
 
-        public async Task<IEnumerable<Employee>> GetEmployeesAsync()
+        public Task<IEnumerable<Employee>> GetEmployeesAsync()
         {
-            return await _employeeRepository.GetEmployeesAsync();
+            return _employeeRepository.GetEmployeesAsync();
         }
 
         public async Task<Employee> UpdateEmployeeAsync(Employee employee)

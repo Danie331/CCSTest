@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{1
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{11F5586E-AAB9-4D07-AB57-F40521D96226}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactFrontEnd", "ReactFrontEnd\ReactFrontEnd.csproj", "{F8013C3F-DFA8-4220-B02C-D11A71A321FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{11F5586E-AAB9-4D07-AB57-F40521D96226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F5586E-AAB9-4D07-AB57-F40521D96226}.Release|Any CPU.Build.0 = Release|Any CPU
 		{11F5586E-AAB9-4D07-AB57-F40521D96226}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F8013C3F-DFA8-4220-B02C-D11A71A321FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8013C3F-DFA8-4220-B02C-D11A71A321FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8013C3F-DFA8-4220-B02C-D11A71A321FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8013C3F-DFA8-4220-B02C-D11A71A321FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

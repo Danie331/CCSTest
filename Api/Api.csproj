@@ -13,4 +13,8 @@
     <ProjectReference Include="..\InternalServices\InternalServices.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

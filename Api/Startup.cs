@@ -26,6 +26,11 @@ namespace Api
         {
             services.RegisterServices(Configuration);
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsDevMode", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
+
             services.AddControllers()
                     .AddJsonOptions(opt => opt.JsonSerializerOptions.PropertyNamingPolicy = null)
                     .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
@@ -42,6 +47,8 @@ namespace Api
             }
 
             app.UseRouting();
+
+            app.UseCors("CorsDevMode");
 
             app.UseMiddleware<ExceptionMiddleware>();
 
